@@ -1,0 +1,23 @@
+08 october 2021
+#### NEW REPOSITORY ####
+
+Create first at github.com a $$NewRep$$
+
+Open CMD
+go to folder
+git init
+git add .
+git commit -m "first commit"
+git branch -M main or master
+git remote add origin https://github.com/geebataglia/$$NewRep$$.git
+git push -u origin main or master
+
+#### PUSHING VERSIONS ####
+
+Open CMD
+go to folder
+git status (if working go to commit)
+git init
+git add .
+git commit -m "DATE - commit"
+git push -u origin main or master
