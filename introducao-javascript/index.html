@@ -2,7 +2,7 @@
 <html lang="pt-br">
 	<head>
 		<meta charset="UTF-8">
-		<title>Aparecida Nutrição</title>
+		<title>Rafaelita Nutricionista</title>
 		<link rel="icon" href="favicon.ico" type="image/x-icon">
 		<link rel="stylesheet" type="text/css" href="css/reset.css">
 		<link rel="stylesheet" type="text/css" href="css/index.css">
@@ -12,14 +12,18 @@
 
 		<header>
 			<div class="titulo">
-				<h1>Aparecida Nutrição</h1>
+				<h1>Rafaelita Nutricionista</h1>
 			</div>
 		</header>
 		<main>
 			<section class="container">
 				<h2>Meus pacientes</h2>
+				<label for="filtrar-tabela">Filtrar:
+				</label>
+				<input type="text" name="filtro" id="filtrar-tabela" placeholder="Digite o nome do paciente">
 				<table>
 					<thead>
+						<br>
 						<tr>
 							<th>Nome</th>
 							<th>Peso(kg)</th>
@@ -103,6 +107,6 @@
 		<script src="js/calcula-imc.js"></script>
 		<script src="js/form.js"></script>
 		<script src="js/remover-paciente.js"></script>
-
+		<script src="js/filtra.js"></script>
 	</body>
 </html>
