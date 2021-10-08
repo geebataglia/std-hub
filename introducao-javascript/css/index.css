@@ -138,3 +138,7 @@ button[disabled=disabled], button:disabled {
 .paciente-invalido{
 	background-color: rgb(250, 70, 105);
 }
+
+#msg-erros{
+	color: crimson;
+}
