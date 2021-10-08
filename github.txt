@@ -16,7 +16,7 @@ git push -u origin main or master
 
 Open CMD
 go to folder
-git status (if working go to commit)
+git status (if working go to add)
 git init
 git add .
 git commit -m "DATE - commit"
