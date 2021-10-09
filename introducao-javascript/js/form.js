@@ -5,22 +5,26 @@ var botaoAdicionar = document.querySelector("#adicionar-paciente");
         var form = document.querySelector("#form-adicionar");
         //Varre informações do paciente dentro dos campos do formulário
         var paciente = obtemPacienteDoFormulario(form);
-        //Cria uma linha separada por colunas das informações digitadas
-        var novoPaciente = montarTabela(paciente);
 
         var erros = validaPaciente(paciente);
-        
         if(erros.length > 0){
             showMsgErro(erros);
             return;
         }
-        //Adiciona na tabela as informações coletadas
-        var tabela = document.querySelector("#tabela-pacientes");
-            tabela.appendChild(novoPaciente);
+
+        addPacienteNaTabela(paciente);
+
             form.reset();
             var msgErro = document.querySelector("#msg-erros");
             msgErro.innerHTML = "";
     });
+
+function addPacienteNaTabela(paciente){
+    var novoPaciente = montarTabela(paciente);
+    var tabela = document.querySelector("#tabela-pacientes");
+    tabela.appendChild(novoPaciente);
+
+}
 
 function showMsgErro(erros){
     var ul = document.querySelector("#msg-erros");
