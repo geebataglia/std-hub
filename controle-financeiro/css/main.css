@@ -1,0 +1,8 @@
+.imagem-carrossel {
+    object-fit: cover;
+    height: 300px;
+}
+.tamanho-tabela {
+    max-width: 75%;
+    margin-left: 12.5%;
+}
