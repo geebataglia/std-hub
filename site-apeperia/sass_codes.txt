@@ -1,0 +1,6 @@
+sass -v (verificar versão)
+
+sass 'file'.scss:'file'.css (compila um arquivo 'file')
+
+sass --watch 'file'.scss:'file'.css
+
